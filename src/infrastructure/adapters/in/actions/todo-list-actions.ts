@@ -12,7 +12,7 @@ const createTodoSchema = z.object({
   title: z.string().min(1),
 });
 
-export const createTodoAction = authActionClient
+export const createTodoListAction = authActionClient
   .metadata({ actionName: "createTodo" })
   .schema(createTodoSchema)
   .action(async ({ parsedInput: { title }, ctx: { userId } }) => {
