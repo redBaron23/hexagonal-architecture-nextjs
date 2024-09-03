@@ -22,3 +22,7 @@ export interface UpdateTodoItemUseCase {
 export interface DeleteTodoItemUseCase {
   execute(id: string): Promise<void>;
 }
+
+export interface GetAllTodoItemsByIdUseCase {
+  execute(id: string): Promise<TodoItem[]>;
+}
