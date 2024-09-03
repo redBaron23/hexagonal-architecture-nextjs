@@ -1,8 +1,8 @@
 "use client";
 
 import { TodoPriority } from "@/domain/value-objects/todo-priority";
-import { createTodoItemSchema } from "@/infrastructure/adapters/in/actions/schema";
-import { createTodoItemAction } from "@/infrastructure/adapters/in/actions/todo-item-actions";
+import { createTodoItemAction } from "@/infrastructure/adapters/in/actions/todo-item/actions";
+import { createTodoItemSchema } from "@/infrastructure/adapters/in/actions/todo-item/schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useAction } from "next-safe-action/hooks";
 import { useForm } from "react-hook-form";

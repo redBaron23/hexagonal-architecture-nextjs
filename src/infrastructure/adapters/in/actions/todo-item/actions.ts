@@ -6,7 +6,7 @@ import { prismaToDoItemRepository } from "@/infrastructure/adapters/out/reposito
 import { pages } from "@/lib/utils/pages";
 import { revalidatePath } from "next/cache";
 import { z } from "zod";
-import { baseActionClient } from "../clients/base-action-client";
+import { baseActionClient } from "../../clients/base-action-client";
 import { createTodoItemSchema } from "./schema";
 
 const todoItemRepository: TodoItemRepository = prismaToDoItemRepository;
